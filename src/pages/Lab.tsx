@@ -638,8 +638,8 @@ export default function Lab() {
   const cameraDist = data ? Math.min(Math.max(data.radius * 2.6, 30), 600) : 60;
 
   return (
-    <div className="py-8 px-6">
-      <div className="max-w-[1500px] mx-auto">
+    <div className="py-8 px-6 md:h-[calc(100dvh-80px)] md:flex md:flex-col md:overflow-hidden">
+      <div className="max-w-[1500px] mx-auto md:w-full md:flex-1 md:min-h-0 md:flex md:flex-col">
         <div className="mb-6">
           <div className="font-[var(--font-mono)] text-xs text-[#00e5ff] uppercase tracking-[0.15em] mb-2">// Molecular Lab</div>
           <h1 className="text-3xl md:text-4xl font-bold">Interactive Structure Explorer</h1>
@@ -682,9 +682,9 @@ export default function Lab() {
           </div>
         )}
 
-        <div className="grid gap-4 md:grid-cols-[280px_minmax(0,1fr)_330px] lg:grid-cols-[300px_minmax(0,1fr)_360px] lg:gap-5 items-start">
+        <div className="grid gap-4 md:grid-cols-[280px_minmax(0,1fr)_330px] lg:grid-cols-[300px_minmax(0,1fr)_360px] lg:gap-5 md:flex-1 md:min-h-0 md:items-stretch">
           {/* viewer */}
-          <div className="relative h-[420px] md:h-[max(500px,min(680px,calc(100vh-330px)))] bg-[#0a1220] rounded-2xl border border-[rgba(0,229,255,0.1)] overflow-hidden md:order-2">
+          <div className="relative h-[420px] md:h-full md:min-h-[380px] bg-[#0a1220] rounded-2xl border border-[rgba(0,229,255,0.1)] overflow-hidden md:order-2">
             {loading && (
               <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 bg-[#0a1220]/80 backdrop-blur-sm">
                 <Loader2 className="w-8 h-8 text-[#00e5ff] animate-spin" />
@@ -785,7 +785,7 @@ export default function Lab() {
           </div>
 
           {/* left column: structure info */}
-          <div className="space-y-4 md:order-1 md:max-h-[max(500px,min(680px,calc(100vh-330px)))] md:overflow-y-auto md:pr-1">
+          <div className="space-y-4 md:order-1 md:h-full md:overflow-y-auto md:pr-1">
             {/* structure info + ESMFold */}
             <div className="bg-[#0e1828] border border-[rgba(0,229,255,0.1)] rounded-2xl p-5">
               <div className="flex items-center gap-2 text-[#00e5ff] mb-3">
@@ -862,7 +862,7 @@ export default function Lab() {
           </div>
 
           {/* right column: selection + agent */}
-          <div className="space-y-4 md:order-3 md:max-h-[max(500px,min(680px,calc(100vh-330px)))] md:overflow-y-auto md:pr-1">
+          <div className="space-y-4 md:order-3 md:h-full md:overflow-y-auto md:pr-1">
             {/* selection */}
             <div className="bg-[#0e1828] border border-[rgba(0,229,255,0.1)] rounded-2xl p-5">
               <div className="flex items-center gap-2 text-[#00e5ff] mb-3">
