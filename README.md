@@ -1,32 +1,94 @@
-# React + TypeScript + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+![AI PROTEUS — Decoding Life](docs/banner.png)
 
-Currently, two official plugins are available:
+# AI PROTEUS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Decentralized protein-folding intelligence. The community votes — the AI builds.**
 
-## React Compiler
+[![Website](https://img.shields.io/badge/Website-proteusai.space-00e5ff?style=for-the-badge&logo=globe&logoColor=white)](https://proteusai.space)
+[![X / Twitter](https://img.shields.io/badge/X-@ai__proteus-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/ai_proteus)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-scienceprotein.github.io-4488ff?style=for-the-badge&logo=github&logoColor=white)](https://scienceprotein.github.io/proteus-ai/)
+[![React](https://img.shields.io/badge/React-19-00e5ff?style=for-the-badge&logo=react&logoColor=white)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-4488ff?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Three.js](https://img.shields.io/badge/Three.js-WebGL-00ff88?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+</div>
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## What is AI PROTEUS?
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+AI PROTEUS is a gamified, science-first platform where the community directs
+AI-driven protein research. Each round presents three molecular hypotheses —
+holders burn **$AIPROTEUS** to vote, the winning hypothesis enters the Arena,
+and an AI folding pipeline (ESMFold + Rosetta-style refinement) computes the
+structure in real time. Results are hashed on-chain and minted as NFTs.
+
+> Decoding life through decentralized intelligence.
+
+## Platform
+
+### 🔬 Molecular Lab
+Interactive 3D explorer with **real experimentally-determined structures** from
+the RCSB Protein Data Bank. Rotate, zoom and click any atom, then launch the AI
+agent on a single residue or the full structure.
+
+- Live PDB fetching (`1CRN`, `1UBQ`, `1LYZ`, `4HHB`, `6VXX`, …)
+- Real-time **ESMFold** predictions via the ESM Atlas API (pLDDT coloring)
+- AI agent simulation: ΔΔG scans, SASA, secondary structure, mutation analysis
+- Custom WebGL renderer — instanced atoms, computed bonds, Cα trace
+
+### ⚔️ Arena
+Burn-to-vote rounds on molecular hypotheses. The winning variant enters the
+Arena where the GPU cluster folds it live while the community watches.
+
+### 🎨 Generator
+Procedural protein-art engine. Tune helix/sheet ratios and residue counts,
+render, and export a full NFT collection (metadata + images) in one click.
+
+### 🧬 Science
+The research layer: AlphaFold, ESMFold, Rosetta, MSA transformers — and how
+they plug into decentralized infrastructure.
+
+### 🪙 Token
+$AIPROTEUS tokenomics: burn-to-vote mechanics, staking, lab grants, and the
+voting smart contract reference implementation.
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| Frontend | React 19 · TypeScript · Vite |
+| 3D | Three.js · @react-three/fiber · @react-three/drei |
+| Data | RCSB PDB API · ESM Atlas (ESMFold) |
+| Styling | Tailwind CSS · Lucide icons |
+| Deploy | GitHub Pages (custom domain: `proteusai.space`) |
+
+## Getting Started
+
+```bash
+npm install
+npm run dev        # local dev server
+npm run build      # production build → dist/
+bash deploy.sh     # build + publish to gh-pages
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Links
+
+- 🌐 **Website:** [proteusai.space](https://proteusai.space)
+- 🐦 **X / Twitter:** [@ai_proteus](https://x.com/ai_proteus)
+- 🧪 **Live app:** [scienceprotein.github.io/proteus-ai](https://scienceprotein.github.io/proteus-ai/)
+
+## Disclaimer
+
+All predictions are computational hypotheses produced for research and
+entertainment. Nothing here constitutes medical advice.
+
+---
+
+<div align="center">
+
+**AI PROTEUS © 2025 — Decoding Life Through Decentralized Intelligence**
+
+</div>
