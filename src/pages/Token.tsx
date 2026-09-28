@@ -6,14 +6,14 @@ export default function Token() {
       icon: <Flame className="w-8 h-8" />,
       title: 'Burn-to-Vote',
       desc: 'Every vote requires burning tokens. The more you burn — the higher your vote weight in the round.',
-      stat: 'Burned: 42.7M PROTEUS',
+      stat: 'Burned: 42.7M AIPROTEUS',
       statColor: 'text-[#ff3366]',
     },
     {
       icon: <Gift className="w-8 h-8" />,
       title: 'Winning Rewards',
       desc: 'Voters for the winning hypothesis receive the predicted structure NFT + prize pool distribution.',
-      stat: 'Distributed: 12.3M PROTEUS',
+      stat: 'Distributed: 12.3M AIPROTEUS',
       statColor: 'text-[#00e5ff]',
     },
     {
@@ -33,10 +33,10 @@ export default function Token() {
   ];
 
   const tokenomics = [
-    { label: 'Total Supply', value: '1,000,000,000 PROTEUS' },
-    { label: 'Circulating', value: '420,000,000 PROTEUS' },
-    { label: 'Burned to Date', value: '42,700,000 PROTEUS' },
-    { label: 'Staked', value: '180,000,000 PROTEUS' },
+    { label: 'Total Supply', value: '1,000,000,000 AIPROTEUS' },
+    { label: 'Circulating', value: '420,000,000 AIPROTEUS' },
+    { label: 'Burned to Date', value: '42,700,000 AIPROTEUS' },
+    { label: 'Staked', value: '180,000,000 AIPROTEUS' },
     { label: 'Market Cap', value: '$42.7M' },
     { label: 'Price', value: '$0.1017' },
   ];
@@ -46,7 +46,7 @@ export default function Token() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="font-[var(--font-mono)] text-xs text-[#00e5ff] uppercase tracking-[0.15em] mb-4">// Tokenomics</div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">$PROTEUS — Fuel of Discovery</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">$AIPROTEUS — Fuel of Discovery</h1>
           <p className="text-[#7a8fa8] text-lg">
             Deflationary token with mandatory burn mechanics for scientific participation.
           </p>
@@ -89,7 +89,7 @@ export default function Token() {
 {`// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-contract ProteusVoting {
+contract AiProteusVoting {
     IERC20 public proteus;
     
     struct Round {

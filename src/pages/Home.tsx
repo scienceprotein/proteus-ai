@@ -38,7 +38,7 @@ export default function Home() {
       icon: <Target className="w-6 h-6" />,
       color: 'text-[#00e5ff] bg-[rgba(0,229,255,0.1)]',
       title: 'Vote Hypotheses',
-      desc: 'Each round offers 3 amino acid sequence variants or conformational states. Burn $PROTEUS to cast your vote.',
+      desc: 'Each round offers 3 amino acid sequence variants or conformational states. Burn $AIPROTEUS to cast your vote.',
       formula: 'votes_i = Σ(burned_tokens) · weight(addr)',
     },
     {
@@ -70,7 +70,7 @@ export default function Home() {
       title: 'Round #42 — p53 Stabilizer Hunt',
       desc: 'Search for stabilizing molecule for mutant p53-R175H',
       options: ['Phikita-1', 'MDM2-inh-7', 'APR-246'],
-      prize: '500K PROTEUS',
+      prize: '500K AIPROTEUS',
       time: '4h 23m left',
     },
     {
@@ -78,7 +78,7 @@ export default function Home() {
       title: 'Round #43 — KRAS G12C Binder',
       desc: 'Design protein binder for previously inaccessible KRAS pocket',
       options: ['Helix-3v', 'Loop-X9', 'Sheet-Z2'],
-      prize: '750K PROTEUS',
+      prize: '750K AIPROTEUS',
       time: 'Starts in 4h',
     },
     {
@@ -86,7 +86,7 @@ export default function Home() {
       title: 'Round #44 — Amyloid-β Cleavage',
       desc: 'Optimize substrate for BACE1 inhibition',
       options: ['Seq-Aβ-19', 'Seq-Aβ-42', 'Hybrid-H7'],
-      prize: '1.2M PROTEUS',
+      prize: '1.2M AIPROTEUS',
       time: 'Starts in 28h',
     },
     {
@@ -120,7 +120,7 @@ export default function Home() {
 
           <p className="text-lg md:text-xl text-[#7a8fa8] max-w-2xl mx-auto mb-10 leading-relaxed">
             Decentralized protein folding prediction platform. Burn{' '}
-            <span className="font-[var(--font-mono)] text-[#00e5ff] bg-[rgba(0,229,255,0.08)] px-2 py-0.5 rounded">$PROTEUS</span>{' '}
+            <span className="font-[var(--font-mono)] text-[#00e5ff] bg-[rgba(0,229,255,0.08)] px-2 py-0.5 rounded">$AIPROTEUS</span>{' '}
             to vote on hypotheses. AI runs computations in the Arena — you watch medicine being born.
           </p>
 
@@ -145,16 +145,16 @@ export default function Home() {
 
           <div className="flex gap-4 justify-center flex-wrap">
             <Link
-              to="/arena"
+              to="/lab"
               className="px-8 py-3.5 rounded-lg font-semibold bg-gradient-to-r from-[#00e5ff] to-[#4488ff] text-[#060a0f] no-underline shadow-[0_4px_24px_rgba(0,229,255,0.3)] hover:shadow-[0_8px_32px_rgba(0,229,255,0.4)] hover:-translate-y-0.5 transition-all"
             >
-              Enter the Arena
+              Enter the Lab
             </Link>
             <Link
-              to="/science"
+              to="/arena"
               className="px-8 py-3.5 rounded-lg font-semibold border border-[rgba(0,229,255,0.25)] text-[#00e5ff] no-underline hover:bg-[rgba(0,229,255,0.08)] transition-all"
             >
-              How the Science Works
+              Enter the Arena
             </Link>
           </div>
         </div>
@@ -267,7 +267,7 @@ export default function Home() {
           <a href="#" className="text-[#7a8fa8] hover:text-[#00e5ff] transition-colors text-sm">Discord</a>
           <a href="#" className="text-[#7a8fa8] hover:text-[#00e5ff] transition-colors text-sm">Twitter / X</a>
         </div>
-        <p className="text-[#4a6078] text-sm">Proteus AI © 2025 — Decoding Life Through Decentralized Intelligence</p>
+        <p className="text-[#4a6078] text-sm">AI PROTEUS © 2025 — Decoding Life Through Decentralized Intelligence</p>
         <p className="text-[#4a6078] text-xs mt-2">
           All predictions are computational hypotheses. Not medical advice.
         </p>

@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className="w-9 h-9 rounded-[10px] bg-gradient-to-br from-[#00e5ff] to-[#4488ff] flex items-center justify-center text-[#060a0f] font-bold text-sm font-[var(--font-mono)]">
           P
         </div>
-        <span>Proteus AI</span>
+        <span>AI PROTEUS</span>
       </Link>
 
       <div className="hidden md:flex items-center gap-8">
@@ -41,7 +41,7 @@ export default function Navbar() {
       </div>
 
       <div className="hidden md:block font-[var(--font-mono)] text-xs px-4 py-2 bg-[#0e1828] border border-[rgba(0,229,255,0.1)] rounded-md text-[#00ff88]">
-        0x71...A3F2 • 2.4M PROTEUS
+        0x71...A3F2 • 2.4M AIPROTEUS
       </div>
 
       <button className="md:hidden text-[#e8f0f8]" onClick={() => setOpen(!open)}>

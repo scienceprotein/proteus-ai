@@ -333,7 +333,7 @@ interface AgentState {
 }
 
 const AGENT_STEPS_RESIDUE = [
-  '[Agent] Initializing Proteus-Fold v2.4 ...',
+  '[Agent] Initializing AI-Proteus-Fold v2.4 ...',
   '[Agent] Querying RCSB for neighbor structures ...',
   '[Agent] Fetching MSA (UniProt clusters) ...',
   '[Agent] Running ESM-2 650M embedding ...',
@@ -346,7 +346,7 @@ const AGENT_STEPS_RESIDUE = [
 ];
 
 const AGENT_STEPS_STRUCTURE = [
-  '[Agent] Initializing Proteus-Fold v2.4 ...',
+  '[Agent] Initializing AI-Proteus-Fold v2.4 ...',
   '[Agent] Parsing full structure topology ...',
   '[Agent] Fetching MSA for all chains ...',
   '[Agent] Running ESM-2 650M embeddings ...',

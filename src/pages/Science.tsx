@@ -103,7 +103,7 @@ export default function Science() {
           <div className="font-[var(--font-mono)] text-xs text-[#00e5ff] uppercase tracking-[0.15em] mb-4">// Research</div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">What We Build On</h2>
           <p className="text-[#7a8fa8] text-lg">
-            Proteus AI integrates the best of computational biology, open science, and decentralized infrastructure.
+            AI PROTEUS integrates the best of computational biology, open science, and decentralized infrastructure.
           </p>
         </div>
 

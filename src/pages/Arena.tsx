@@ -220,7 +220,7 @@ export default function Arena() {
 
             <p className="text-sm text-[#7a8fa8]">
               <strong className="text-[#00ff88]">Hypothesis #2</strong> leads with 58% of votes. 
-              Users burned <strong>2.4M $PROTEUS</strong> for this variant.
+              Users burned <strong>2.4M $AIPROTEUS</strong> for this variant.
             </p>
           </div>
         </div>

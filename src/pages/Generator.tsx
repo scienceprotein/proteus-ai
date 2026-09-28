@@ -220,8 +220,8 @@ export default function Generator() {
         const name = randomName(seed);
 
         const metadata: TokenMetadata = {
-          name: `Proteus Structure #${tokenId} — ${name}`,
-          description: `A procedurally generated protein folding visualization. Part of the Proteus AI collection. Structure class: ${sClass}. Rarity: ${rarity}.`,
+          name: `AI Proteus Structure #${tokenId} — ${name}`,
+          description: `A procedurally generated protein folding visualization. Part of the AI PROTEUS collection. Structure class: ${sClass}. Rarity: ${rarity}.`,
           image: `ipfs://YOUR_CID_HERE/${tokenId}.png`,
           attributes: [
             { trait_type: 'Helix Ratio', value: `${(params.helixRatio * 100).toFixed(0)}%` },
@@ -318,7 +318,7 @@ export default function Generator() {
               <div className="text-xs text-[#4a6078] uppercase tracking-wider mb-2">Sample Metadata</div>
               <div className="font-[var(--font-mono)] text-xs bg-black/30 rounded-lg p-3 overflow-x-auto text-[#7a8fa8]">
                 <pre>{JSON.stringify({
-                  name: `Proteus Structure #1 — ${randomName(42)}`,
+                  name: `AI Proteus Structure #1 — ${randomName(42)}`,
                   image: 'ipfs://YOUR_CID_HERE/1.png',
                   attributes: [
                     { trait_type: 'Helix Ratio', value: `${(params.helixRatio * 100).toFixed(0)}%` },
