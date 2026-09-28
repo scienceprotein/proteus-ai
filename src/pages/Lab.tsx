@@ -682,9 +682,9 @@ export default function Lab() {
           </div>
         )}
 
-        <div className="grid lg:grid-cols-[1fr_400px] gap-6">
+        <div className="grid gap-4 lg:grid-cols-[290px_minmax(0,1fr)_350px] lg:gap-5 items-start">
           {/* viewer */}
-          <div className="relative h-[560px] bg-[#0a1220] rounded-2xl border border-[rgba(0,229,255,0.1)] overflow-hidden">
+          <div className="relative h-[600px] bg-[#0a1220] rounded-2xl border border-[rgba(0,229,255,0.1)] overflow-hidden lg:order-2">
             {loading && (
               <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 bg-[#0a1220]/80 backdrop-blur-sm">
                 <Loader2 className="w-8 h-8 text-[#00e5ff] animate-spin" />
@@ -784,8 +784,8 @@ export default function Lab() {
             </div>
           </div>
 
-          {/* side panel */}
-          <div className="space-y-4">
+          {/* left column: structure info */}
+          <div className="space-y-4 lg:order-1">
             {/* structure info + ESMFold */}
             <div className="bg-[#0e1828] border border-[rgba(0,229,255,0.1)] rounded-2xl p-5">
               <div className="flex items-center gap-2 text-[#00e5ff] mb-3">
@@ -859,7 +859,10 @@ export default function Lab() {
                 <p className="text-xs text-[#4a6078]">No structure loaded.</p>
               )}
             </div>
+          </div>
 
+          {/* right column: selection + agent */}
+          <div className="space-y-4 lg:order-3 lg:max-h-[600px] lg:overflow-y-auto lg:pr-1">
             {/* selection */}
             <div className="bg-[#0e1828] border border-[rgba(0,229,255,0.1)] rounded-2xl p-5">
               <div className="flex items-center gap-2 text-[#00e5ff] mb-3">
